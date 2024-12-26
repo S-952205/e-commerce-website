@@ -16,6 +16,7 @@ const config: Config = {
 			myblack: "#151515",
 			mymaroon: "#A91D3A",
 			myred: "#C73659",
+			myblue: "#4B70F5",
 			mygrey: "#EEEEEE",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
