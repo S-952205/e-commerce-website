@@ -5,3 +5,11 @@
 .custom-img {
   background-image: url('/pictures/hero2.jpg');
 }
+
+.promo1-img {
+  background-image: url('/pictures/promo1.jpg');
+}
+
+.promo2-img {
+  background-image: url('/pictures/promo2.jpg');
+}
