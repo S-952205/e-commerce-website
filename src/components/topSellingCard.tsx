@@ -2,19 +2,39 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from './ui/button'
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
+import Link from 'next/link';
+
 
 const TopSellingCard = (  
     {
     src,
     title,
     description,
-    price
-    }: {src:string, title:string, description:string, price:string}) => {
+    price,
+    category,
+    product
+    }: 
+    {
+    src:string,
+    title:string,
+    description:string,
+    price:string,
+    category:string,
+    product:string}) => {
   return (
     <div>
       {/*Ek reusable component banaya jo har category ka layout define karega yani 150plus bhee 
       categories ajain yeh layput hee adopt krein gee*/}
       <div className="w-[350px] h-[35rem] p-4 rounded-xl shadow-md relative group">
+
+      {/**link pehlay nhi tha  image or texts ko link main isliye wrap kiya takay ispay hum click krskein
+         or click krnay kay baad hum product page pay chlay jain specific product kay nested route pay jaige ispay 
+         click krkay*/}
+
+       {/*Dynamic Routing Process:
+        category ke value ke basis par route ka first part decide hoga (e.g., tops).
+        product ke value ke basis par nested route decide hoga (e.g., black-tshirt). */}
+      <Link href={`/${category}/${product}`}>
         <div className="block overflow-hidden h-[22rem] rounded">
           <Image
             src={src}
@@ -32,6 +52,7 @@ const TopSellingCard = (
             <p className='mt-2 scroll-m-20 pb-2 text-base font-semibold 
             tracking-tight first:mt-0 text-myblack'>{price}</p>
           </div>
+        </Link>
 
           <div>
             <Button className='absolute bottom-2 right-2 scroll-m-20 pb-2 text-xs font-semibold

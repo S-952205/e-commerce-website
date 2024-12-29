@@ -11,13 +11,13 @@ const Hero = () => {
           <div className="max-w-md">
             <h1 className="mb-5 scroll-m-20 text-4xl font-extrabold
              tracking-tight lg:text-5xl text-white">Trendy <span className='text-[#4B70F5]'>Looks</span></h1>
-            <p className="mb-5 scroll-m-20 text-xl font-semibold tracking-tight">
+            <p className="mb-5 text-white scroll-m-20 text-xl font-semibold tracking-tight">
             Shop our exclusive selection and elevate your style with chic and comfortable outfits
             </p>
                 <Button className='hover:rounded-full outline outline-offset-2 outline-2 
-                                   group hover:outline-myblue duration-300'>
+                                   group hover:outline-myblue duration-300 text-white'>
                     <AiFillShopping className="group-hover:text-myblue 
-                    group-hover:animate-bounce duration-300"/> Shop Now
+                    group-hover:animate-bounce duration-300 "/> Shop Now
                 </Button>
           </div>
         </div>

@@ -18,25 +18,25 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Tops",
-    href: "#",
+    href: "/tops",
     description:
       "Trendy and stylish tops for every occasion, designed to keep you comfortable and fashionable.",
   },
   {
     title: "Pants",
-    href: "#",
+    href: "/pants",
     description:
     "Versatile and sleek pants that offer both style and comfort, perfect for any outfit.",
   },
   {
     title: "Accessories/Jewelry",
-    href: "/docs/primitives/progress",
+    href: "/accessories",
     description:
       "Elegant jewelry and accessories to add a touch of glamour and sophistication to your look.",
   },
   {
     title: "Footwear",
-    href: "#",
+    href: "/footwear",
     description: "Step into comfort and style with our collection of chic and durable footwear options.",
   },
 ]
@@ -55,28 +55,31 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Women</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-mygrey ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px
+             bg-mygrey ">
+              {/**ismain pehlay link tag nhi tha sirf listitem tha menay link tag main phir listitem
+               * ko wrap kiya takay links pay click honay pr page reload na hoo*/}
+              {components.map((component) => ( 
+                <Link key={component.title}
+                      href={component.href}>
+
+                <ListItem title={component.title}> {/**title heading hai tbhi issay listitem kay opening tag main add kiya */}
                   {component.description}
                 </ListItem>
+              </Link>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem> 
-          <Link href="#" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem> {/**menay add kiya about wala copy krkay*/}
-          <Link href="#" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact
             </NavigationMenuLink>

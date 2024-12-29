@@ -26,25 +26,25 @@ const Navbar = () => {
                 <summary>Women</summary>
                 <ul className="p-2">
                   <li>
-                    <Link href={'#'}>Tops</Link>
+                    <Link href={'/tops'}>Tops</Link>
                   </li>
                   <li>
-                    <Link href={'#'}>Pants</Link>
+                    <Link href={'/pants'}>Pants</Link>
                   </li>
                   <li>
-                    <Link href={'#'}>Accessories/Jewelry</Link>
+                    <Link href={'/accessories'}>Accessories/Jewelry</Link>
                   </li>
                   <li>
-                    <Link href={'#'}>Footwear</Link>
+                    <Link href={'/footwear'}>Footwear</Link>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <Link href={'#'}>About</Link>
+              <Link href={'/about'}>About</Link>
             </li>
             <li>
-              <Link href={'#'}>Contact</Link>
+              <Link href={'/contact'}>Contact</Link>
             </li>
             </ul>
           </div>
