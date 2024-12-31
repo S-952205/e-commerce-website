@@ -60,10 +60,15 @@ const Navbar = () => {
             <NavigationMenuDemo/> 
           </div>
         </div>
-        {/**Cart margin right diya line 66 pay*/}
-        <div className="navbar-end">
-          <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="mr-4 ">
+        {/**Cart*/}
+        {/**jb cart ka route banaya tw yahn say kuch remove kiye jesay cart pay click krnay say box show horaha
+         *  tha magar humein cart pay click krkay cart kay page pay jana tha tw humnay woo part remove kiya.
+         * or cart ko link main wrap kiya.
+         */}
+         
+          <div className="navbar-end">
+           <Link href={'/cart'}>
+             <div tabIndex={0} role="button" className="mr-4 ">
               <div className="indicator group ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -82,22 +87,9 @@ const Navbar = () => {
                 <span className="badge badge-sm indicator-item font-semibold 
                  group-hover:text-white group-hover:bg-myblack bg-[#4B70F5] text-white">8</span>
               </div>
-            </div>
-
-            <div
-              tabIndex={0}
-              className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
-              <div className="card-body">
-                <span className="text-lg font-bold">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
-                <div className="card-actions">
-                  <button className="btn btn-primary btn-block">View cart</button>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+              </div>   
+            </Link>         
+          </div> 
       </div>
     </div>
   );
