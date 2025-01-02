@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export function GET(request:NextRequest){
+export function GET(){
     const topsells = [
       {
         src: "/pictures/tshirt1.jpg",

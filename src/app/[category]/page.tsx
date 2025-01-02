@@ -12,7 +12,7 @@ interface TopSellingItem {
   product: string;
 };
 
-const Category = (props:any) => {
+const Category = () => {
 
     // const topsells = [
     //     {
@@ -109,7 +109,7 @@ const Category = (props:any) => {
          {
             topsells.map((items, i)=>{
                 return(
-                    <TopSellingCard src={items.src} title={items.title} 
+                    <TopSellingCard key={i} src={items.src} title={items.title} 
                     description={items.description}  price={items.price}
                     category={items.category} product={items.product}/>
                 )
