@@ -48,12 +48,12 @@ const Navbar = () => {
             </li>
             </ul>
           </div>
-          <h1 className='font-bold text-[22px] pl-[5px] hidden lg:block'><span className='text-myblue'>W</span>OMEN</h1>
+          <h1 className='font-bold font-Satoshi text-[22px] pl-[5px] hidden lg:block'><span className='text-myblue'>W</span>OMENWEAR</h1>
         </div>
 
         {/**iss line main hamara center hai navbar ka jismain links hain ya menu kehsktay navigation */}
         <div className="navbar-center">
-        <h1 className='font-bold text-[22px] pl-[5px] block lg:hidden'><span className='text-myblue'>W</span>OMEN</h1>
+        <h1 className='font-bold text-[22px] pl-[5px] font-Satoshi block lg:hidden'><span className='text-myblue'>W</span>OMENWEAR</h1>
           <div className="hidden lg:flex">
              {/**yeh daisy ui say add kiya phir iska code copy kiya
              or navlinks main paste kiye kuch changes kiye or issay yahan import krdiya */}

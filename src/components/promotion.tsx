@@ -7,7 +7,7 @@ const Promotion = () => {
       <div className="text-center mb-20">
         <h1
           className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl
-           text-gray-900 mb-4">
+           text-gray-900 mb-4 font-Satoshi">
           Promotion
         </h1>
         <div className="flex mt-2 justify-center">

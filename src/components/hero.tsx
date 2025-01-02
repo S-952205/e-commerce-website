@@ -10,7 +10,7 @@ const Hero = () => {
          <div className="hero-content text-neutral-content text-center">
           <div className="max-w-md">
             <h1 className="mb-5 scroll-m-20 text-4xl font-extrabold
-             tracking-tight lg:text-5xl text-white">Trendy <span className='text-[#4B70F5]'>Looks</span></h1>
+             tracking-tight lg:text-5xl text-white font-Satoshi">Trendy <span className='text-[#4B70F5]'>Looks</span></h1>
             <p className="mb-5 text-white scroll-m-20 text-xl font-semibold tracking-tight">
             Shop our exclusive selection and elevate your style with chic and comfortable outfits
             </p>

@@ -8,7 +8,7 @@ const Categories = () => {
       <div className="text-center mb-20">
         <h1
           className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl
-           text-gray-900 mb-4"
+           text-gray-900 mb-4 font-Satoshi"
         >
           Our Categories
         </h1>
@@ -32,7 +32,7 @@ const Categories = () => {
           />
           <div
             className="hidden lg:block absolute -bottom-24 group-hover:bottom-0 duration-500
-           scroll-m-20 text-3xl font-bold tracking-tight uppercase bg-black/60 text-white
+            scroll-m-20 text-3xl font-bold tracking-tight uppercase bg-black/60 text-white
             w-full text-center"
           >
             <h2 className="">Tops</h2>

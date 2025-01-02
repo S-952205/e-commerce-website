@@ -12,6 +12,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			Satoshi: ['Satoshi', 'sans-serif'],
+		},
   		colors: {
 			myblack: "#151515",
 			mymaroon: "#A91D3A",

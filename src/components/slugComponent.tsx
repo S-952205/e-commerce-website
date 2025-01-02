@@ -26,7 +26,7 @@ const SlugComponent = () => {
       />
 
       {/**Thumbnails (choti image jo main images kay neechay dikhrhein) par click karte
-       hi main image ka badalna ek common * aur user-friendly feature hai jo UX ko better banata hai. */}
+       hi main image ka badalna ek common aur user-friendly feature hai jo UX ko better banata hai. */}
       <div className='flex items-center justify-evenly mt-2'>
         <div className='cursor-pointer'>
           <Image

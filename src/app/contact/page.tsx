@@ -1,9 +1,147 @@
-import React from 'react'
+import { Button } from '@/components/ui/button'
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Contact = () => {
   return (
     <div>
-       <h1>Contact Page</h1>
+      <section className="body-font relative">
+        <div className="container px-5 py-24 mx-auto ">
+          <div className="flex flex-col text-center mb-7 ">
+            <h1 className="scroll-m-20 text-3xl font-semibold tracking-tight text-myblack font-Satoshi">
+              Get in Touch with Us
+            </h1>
+            <p className="lg:w-2/3 mx-auto mt-2 font-Satoshi scroll-m-20 text-base font-semibold tracking-tight text-myblack/70">
+             We&#39;re here to assist with your fashion needs! Feel free to reach out with questions,
+             orders, or feedback we&#39;re happy to help
+            </p>
+          </div>
+          <div className="lg:w-1/2 md:w-2/3 mx-auto p-5 bg-white rounded shadow-md">
+            <div className="flex flex-wrap -m-2">
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label htmlFor="name" className="leading-7 scroll-m-20 text-sm font-medium tracking-tight text-myblack">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder='Your Name'
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-myblack focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label htmlFor="number" className="leading-7 scroll-m-20 text-sm font-medium tracking-tight text-myblack">
+                    Phone
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder='Phone'
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-myblack focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label htmlFor="email" className="leading-7 scroll-m-20 text-sm font-medium tracking-tight text-myblack">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder='Email'
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-myblack focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-full">
+                <div className="relative">
+                  <label
+                    htmlFor="message"
+                    className="leading-7 scroll-m-20 text-sm font-medium tracking-tight text-myblack"
+                  >
+                    Feedback
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder='Share Your Thoughts'
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-myblack focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    defaultValue={""}
+                  />
+                </div>
+              </div>
+              {/**Button */}
+              <div className="p-2 w-full">
+                <Button className='bg-black uppercase text-xs text-white hover:text-white hover:bg-myblue duration-300 '>
+                <MdOutlineKeyboardArrowRight className='text-white'/> Share your feedback
+                </Button>
+              </div>
+
+              <div className="p-2 w-full pt-8 mt-8  border-gray-200 text-center">
+                <span className="inline-flex">
+                  <a className="text-myblack hover:text-myblue cursor-pointer">
+                    <svg
+                      fill="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      className="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                    </svg>
+                  </a>
+                  <a className="ml-4 text-myblack  hover:text-myblue cursor-pointer">
+                    <svg
+                      fill="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      className="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                    </svg>
+                  </a>
+                  <a className="ml-4 text-myblack hover:text-myblue cursor-pointer">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      className="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
+                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+                    </svg>
+                  </a>
+                  <a className="ml-4 text-myblack  hover:text-myblue cursor-pointer">
+                    <svg
+                      fill="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      className="w-5 h-5"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                    </svg>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }

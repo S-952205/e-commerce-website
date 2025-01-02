@@ -44,7 +44,7 @@ const TopSelling = () => {
       <div className="text-center mb-20">
         <h1
           className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl
-           text-gray-900 mb-4"
+           text-gray-900 mb-4 font-Satoshi"
         >
           {" "}
           Top Selling Products

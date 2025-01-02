@@ -27,7 +27,7 @@ const TopSellingCard = (
       categories ajain yeh layput hee adopt krein gee*/}
       <div className="w-[350px] h-[35rem] p-4 rounded-xl shadow-md relative group">
 
-      {/**link pehlay nhi tha  image or texts ko link main isliye wrap kiya takay ispay hum click krskein
+      {/**link pehlay nhi tha image or texts ko link main isliye wrap kiya takay ispay hum click krskein
          or click krnay kay baad hum product page pay chlay jain specific product kay nested route pay jaige ispay 
          click krkay*/}
 

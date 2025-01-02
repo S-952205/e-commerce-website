@@ -6,7 +6,7 @@ const Services = () => {
       <div className="container px-5 mx-auto"> {/**padding thee yahan ussay remove kiya */}
         <div className="text-center mb-20">
           <h1 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl
-           text-gray-900 mb-4">
+           text-gray-900 mb-4 font-Satoshi">
             Services
           </h1>
           <div className="flex mt-2 justify-center">

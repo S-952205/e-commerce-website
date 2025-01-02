@@ -149,8 +149,8 @@ const Footer = () => {
       <div className="bg-mygrey">
         <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <h1 className="font-bold text-[22px] pl-[5px]">
-              <span className="text-myblue">W</span>OMEN
+            <h1 className="font-bold text-[22px] pl-[5px] font-Satoshi">
+              <span className="text-myblue ">W</span>OMENWEAR
             </h1>
             <span className="ml-3 text-xl"></span>
           </a>
@@ -158,7 +158,7 @@ const Footer = () => {
             className="text-myblack/80 hover:text-black/50 text-base
        font-semibold tracking-tight sm:ml-6 sm:mt-0 mt-4 cursor-pointer"
           >
-            © 2024 Women
+            © 2024 Women Wear
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a className="text-gray-500 hover:text-myblue cursor-pointer">

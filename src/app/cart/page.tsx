@@ -8,6 +8,7 @@ const Cart = () => {
        <div className='grid lg:grid-cols-3 grid-cols-1'>
           {/**item div jo right side pay show hoga */}
           <div className='col-span-2'>
+           {/**CartCard component hai jismain yeh props jainge or cardcomponent render hoga lrft-side pay */} 
            <CartCard src='/pictures/tshirt.jpg' title='White T-Shirt Orange Printed' size='L' price={150}/>
           </div>
           {/**order summary*/}  
